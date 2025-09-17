@@ -7,14 +7,16 @@ import {
   MoonIcon,
   SunIcon,
   MagnifyingGlassIcon,
-  UserCircleIcon
+  UserCircleIcon,
+  CogIcon
 } from '@heroicons/react/24/outline';
 
 interface ModernTopbarProps {
   setSidebarOpen: (open: boolean) => void;
+  setActiveSection?: (section: string) => void;
 }
 
-const ModernTopbar: React.FC<ModernTopbarProps> = ({ setSidebarOpen }) => {
+const ModernTopbar: React.FC<ModernTopbarProps> = ({ setSidebarOpen, setActiveSection }) => {
   const { user } = useAuth();
   const { darkMode, toggleDarkMode } = useApp();
 
@@ -71,6 +73,14 @@ const ModernTopbar: React.FC<ModernTopbarProps> = ({ setSidebarOpen }) => {
             <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full flex items-center justify-center">
               <span className="text-xs text-white font-semibold">3</span>
             </span>
+          </button>
+
+          {/* Settings */}
+          <button 
+            onClick={() => setActiveSection && setActiveSection('settings')}
+            className="p-2 rounded-xl hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          >
+            <CogIcon className="w-5 h-5 text-gray-600" />
           </button>
 
           {/* User Profile */}

@@ -53,14 +53,14 @@ const ModernSidebar: React.FC<ModernSidebarProps> = ({
       {/* Mobile Overlay */}
       {isOpen && (
         <div 
-          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 lg:hidden"
+          className="fixed inset-0 bg-black/30 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-300"
           onClick={() => setIsOpen(false)}
         />
       )}
 
       {/* Sidebar */}
       <div className={`
-        fixed top-0 left-0 h-full w-72 bg-white/95 backdrop-blur-xl border-r border-gray-200/50 shadow-2xl z-50 transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:z-auto
+        fixed top-0 left-0 h-full w-72 bg-white/80 backdrop-blur-xl border-r border-gray-200/50 shadow-2xl z-50 transform transition-all duration-300 ease-in-out lg:translate-x-0 lg:static lg:z-auto
         ${isOpen ? 'translate-x-0' : '-translate-x-full'}
       `}>
         {/* Header */}
@@ -78,7 +78,7 @@ const ModernSidebar: React.FC<ModernSidebarProps> = ({
           {/* Close button for mobile */}
           <button
             onClick={() => setIsOpen(false)}
-            className="lg:hidden p-2 rounded-xl hover:bg-gray-100 transition-colors"
+            className="lg:hidden p-2 rounded-xl hover:bg-gray-100/80 transition-all duration-200"
           >
             <XMarkIcon className="w-6 h-6 text-gray-600" />
           </button>

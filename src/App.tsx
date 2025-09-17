@@ -104,7 +104,7 @@ const AppContent: React.FC = () => {
           setIsOpen={setSidebarOpen}
         />
         <div className="flex-1 flex flex-col overflow-hidden lg:ml-0">
-          <ModernTopbar setSidebarOpen={setSidebarOpen} />
+          <ModernTopbar setSidebarOpen={setSidebarOpen} setActiveSection={setActiveSection} />
           <main className="flex-1 overflow-y-auto p-3 sm:p-6">
             <div className="max-w-7xl mx-auto">
               {renderActiveSection()}

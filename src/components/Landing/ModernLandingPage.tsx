@@ -60,8 +60,8 @@ const ModernLandingPage: React.FC<ModernLandingPageProps> = ({ onLoginClick, onS
 
   const stats = [
     { number: '99.9%', label: 'Accuracy Rate', icon: SparklesIcon },
-    { number: '10K+', label: 'Students Tracked', icon: UserGroupIcon },
-    { number: '500+', label: 'Institutions', icon: AcademicCapIcon },
+    { number: 'Smart', label: 'AI Recognition', icon: UserGroupIcon },
+    { number: 'Secure', label: 'Data Protection', icon: AcademicCapIcon },
     { number: '24/7', label: 'System Uptime', icon: CheckCircleIcon }
   ];
 
@@ -148,8 +148,8 @@ const ModernLandingPage: React.FC<ModernLandingPageProps> = ({ onLoginClick, onS
             </h1>
             
             <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Transform your institution with AI-powered attendance tracking. 
-              QR codes, face recognition, and predictive analytics in one elegant platform.
+              Streamline your institution's attendance management with modern technology. 
+              QR codes, face recognition, and comprehensive analytics in one elegant platform.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -261,7 +261,7 @@ const ModernLandingPage: React.FC<ModernLandingPageProps> = ({ onLoginClick, onS
               <div className="space-y-4">
                 <div className="flex items-center">
                   <CheckCircleIcon className="w-6 h-6 text-green-500 mr-3" />
-                  <span className="text-gray-700">99.9% accuracy with QR code and face recognition</span>
+                  <span className="text-gray-700">High accuracy with QR code and face recognition</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircleIcon className="w-6 h-6 text-green-500 mr-3" />
@@ -281,23 +281,23 @@ const ModernLandingPage: React.FC<ModernLandingPageProps> = ({ onLoginClick, onS
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white rounded-2xl p-6 text-center shadow-lg">
                   <UserGroupIcon className="w-12 h-12 text-indigo-600 mx-auto mb-4" />
-                  <div className="text-3xl font-bold text-gray-800">500+</div>
-                  <div className="text-gray-600">Institutions</div>
+                  <div className="text-3xl font-bold text-gray-800">Smart</div>
+                  <div className="text-gray-600">Technology</div>
                 </div>
                 <div className="bg-white rounded-2xl p-6 text-center shadow-lg">
                   <AcademicCapIcon className="w-12 h-12 text-green-600 mx-auto mb-4" />
-                  <div className="text-3xl font-bold text-gray-800">50K+</div>
-                  <div className="text-gray-600">Students</div>
+                  <div className="text-3xl font-bold text-gray-800">Easy</div>
+                  <div className="text-gray-600">Setup</div>
                 </div>
                 <div className="bg-white rounded-2xl p-6 text-center shadow-lg">
                   <ChartBarIcon className="w-12 h-12 text-purple-600 mx-auto mb-4" />
-                  <div className="text-3xl font-bold text-gray-800">1M+</div>
-                  <div className="text-gray-600">Records</div>
+                  <div className="text-3xl font-bold text-gray-800">Fast</div>
+                  <div className="text-gray-600">Processing</div>
                 </div>
                 <div className="bg-white rounded-2xl p-6 text-center shadow-lg">
                   <CheckCircleIcon className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                  <div className="text-3xl font-bold text-gray-800">99.9%</div>
-                  <div className="text-gray-600">Uptime</div>
+                  <div className="text-3xl font-bold text-gray-800">Secure</div>
+                  <div className="text-gray-600">Platform</div>
                 </div>
               </div>
             </div>
@@ -311,7 +311,7 @@ const ModernLandingPage: React.FC<ModernLandingPageProps> = ({ onLoginClick, onS
           <div className="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-3xl p-12 text-white">
             <h2 className="text-4xl font-bold mb-6">Ready to Get Started with Attendify?</h2>
             <p className="text-xl mb-8 opacity-90">
-              Join thousands of schools and universities using Attendify
+              Transform your attendance management with modern technology
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
